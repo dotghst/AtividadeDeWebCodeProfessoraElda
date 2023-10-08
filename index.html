@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Aula Elda</title>
+	<style type="text/css">
+		
+		body{
+			background: black;
+			color: yellow;
+			margin: 0;
+			padding: 0;
+			font-family: cursive;
+		}
+		header{
+			text-align: center;
+			background: black;
+			padding: 0;
+			border-bottom: 1px solid yellow;
+
+		}
+		form{
+			width: 400px;
+		}
+		fieldset{
+			border-color: yellow;
+		}
+		input{
+			width: 100%;
+    		padding: 12px 20px;
+    		margin: 8px 0;
+    		box-sizing: border-box;
+    		/*border: 1px solid #555;*/
+    		outline: none;
+			opacity: 1;
+			transition: background-color 3s;
+			
+		}
+		input:hover{
+			opacity: 1;
+		}
+		input:focus {
+    		background-color: yellow;
+  		  	color:black;
+		}	
+		#title{
+			font-size: 36px;
+			padding-top: 10px;
+		}
+		#botoes{
+			padding: 10px;
+			border-bottom: 1px solid yellow;
+		}
+		#cadastro{
+			margin: 10px;
+		}
+		#conteudo{
+			text-align: justify;
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+		.container { 
+    		width: 100vw;
+			/*height: 100vh;*/
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+		.box{
+			width: 300px;
+			height: 300px;
+		}
+		img{
+			opacity: 0.1;
+			transition: opacity 1s;
+		}
+		img:hover{
+			opacity: 1;
+		}
+		hr{
+			border: 1px solid yellow;
+		}
+		h3{
+			color: red;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<a id="title">Lado Negro Da Força</a>
+	</header>
+	<section>
+		<div id="botoes" class="container">
+			<div class="box">
+				<img src="darthvader.png" width="290px">
+			</div>
+			<div class="box">
+				<h2>Quem Somos?</h2>
+		        <p>Somos uma comunidade apaixonada por compartilhar conhecimento e discutir diversos temas. Nosso fórum é o lugar ideal para pessoas de diferentes origens se reunirem, trocarem ideias e aprenderem umas com as outras.</p>
+			</div>
+			 <form id="cadastro" class="box">
+			 	<fieldset>
+			 		<legend>Login</legend>
+	 			 	<label for="fname">Usuário:</label><br>
+	  				<input type="text" id="fname" name="fname"><br>
+	  				<label for="lname">Senha:</label><br>
+	  				<input type="text" id="lname" name="lname"><br>
+	  				<input type="button" name="" value="ACESSAR">
+	  				<a href="registro.html">Registrar</a>
+  				</fieldset>
+			</form> 
+		</div>
+
+		<div id="conteudo">
+			<h1 style="text-align: center;">Formatação com Lorem Ipsum</h1>
+			<h3>Texto Justificado</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum convallis arcu sed dignissim. Morbi malesuada turpis nec consequat tempor. Sed nibh nulla, rhoncus eget risus et, gravida consectetur elit. Praesent suscipit luctus nunc, sed tincidunt ipsum suscipit ut. Aliquam sed dui ut purus gravida tristique sit amet eu ipsum. In hac habitasse platea dictumst. Vestibulum ornare pellentesque nulla quis malesuada. Sed nisi nulla, congue ut sodales in, cursus et tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris augue augue, porta vel turpis vel, congue lobortis erat. Aenean vel pulvinar lacus. Vivamus non ipsum eu sem tempor maximus et sed nisl. Quisque tristique nisl eget libero ornare dapibus. Vestibulum consectetur eget orci vitae pharetra. Donec sed ultricies justo. Suspendisse hendrerit nisi at sem porttitor, in lobortis lectus fringilla.</p>
+			<hr>
+			<h3>Texto no lado Esquerdo</h3>
+			<p style="text-align: left;">Quisque eleifend faucibus orci, ac iaculis quam porta vitae. Etiam bibendum mauris quam, sit amet finibus mi dictum eget. Cras nisi metus, scelerisque vel tincidunt nec, vestibulum sed orci. Pellentesque vel porta sapien, et gravida mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum semper consectetur consectetur. Nullam id lacus blandit, maximus nisi quis, posuere odio. Curabitur vitae lectus hendrerit, congue velit sollicitudin, mattis felis. Nulla ut imperdiet arcu, in posuere nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus mollis enim magna. Nulla pulvinar sollicitudin dolor, in ornare dolor maximus non. Suspendisse tempor nisi et massa interdum facilisis a nec neque. Duis sed dictum tortor, at consequat ante. Mauris vitae lacus tempor tellus pretium ornare.</p>
+			<hr>
+			<h3>Texto no lado Direito</h3>
+			<p style="text-align: right;">Nunc accumsan eros viverra tellus tristique, vitae pretium massa rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id odio felis. Vestibulum posuere odio nec iaculis imperdiet. Quisque ac ante eget sapien venenatis imperdiet. Nunc lorem tortor, laoreet sit amet porttitor nec, consequat vel massa. Curabitur consectetur maximus volutpat. Aliquam sit amet tincidunt nibh, vel elementum purus. Etiam tempor pulvinar enim, eget tincidunt tellus hendrerit iaculis. Donec pulvinar viverra gravida. Cras condimentum vitae lacus eget placerat. Nullam ac maximus dui. Mauris pulvinar facilisis felis quis imperdiet. Integer at lobortis odio. Fusce elementum erat lacus, vehicula iaculis lectus molestie et.</p>
+			<hr>
+			<h3>Texto centralizado</h3>
+			<p style="text-align: center;">Ut porta ante non odio vehicula tempor. Quisque ac est a mi elementum fringilla ut quis tellus. Aliquam eu metus et ante hendrerit rhoncus vitae sed tellus. Suspendisse non felis odio. Aliquam consectetur gravida mauris, sit amet lobortis arcu consequat non. Vestibulum sapien magna, varius a diam eu, semper feugiat magna. Sed vitae mi fringilla, malesuada turpis id, sagittis nunc. Mauris lobortis erat ac tortor maximus varius. Nunc mattis sodales odio, eu tristique elit pharetra sed. Fusce at egestas erat, id eleifend purus. Duis bibendum tortor at quam tempor, at malesuada purus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque scelerisque, est non molestie fringilla, diam tellus aliquet nisl, semper pulvinar mauris ipsum ac tellus. Nam volutpat commodo dolor, et laoreet felis congue eu.</p>
+			<hr>
+			<h3>Tópicos</h3>
+			<ul>
+				<li>In mollis tristique leo sit amet posuere.</li>
+				<li>Sed quam mi, blandit nec luctus accumsan, tincidunt ac nisi.</li>
+				<li>Aliquam blandit, enim eu malesuada placerat, quam odio sodales felis, vel ultrices purus mauris ut sem. Quisque ac congue leo.</li>
+				<li>Donec molestie dui placerat libero ultricies tincidunt.</li>
+			</ul>
+			<hr>
+			<h3>Tabelas</h3>
+			<table border="1px" style="width: 100%;">
+				<tr>
+					<th>Mauris mattis</th>
+					<th>Mauris mattis</th>
+					<th>Mauris mattis</th>
+				</tr>
+				<tr>
+					<th>neque eget rutrum mollis</th>
+					<th>neque eget rutrum mollis</th>
+					<th>neque eget rutrum mollis</th>
+				</tr>
+				<tr>
+					<th>quam ipsum tempor massa</th>
+					<th>quam ipsum tempor massa</th>
+					<th>quam ipsum tempor massa</th>
+				</tr>
+			</table>
+			<p>nec sodales urna est a lorem. Vivamus tellus quam, placerat maximus vestibulum id, sagittis at purus. Fusce augue enim, blandit et justo ac, accumsan accumsan nisi. Praesent a urna lorem. Donec sagittis nulla sit amet mi condimentum ultrices.</p>
+			<hr>
+			
+
+			<p>Mauris egestas tellus nec aliquam maximus. Proin egestas sodales orci, ut sollicitudin nisl. Aenean ultrices arcu nec nisi luctus vulputate. Fusce leo nisl, cursus vitae mauris vel, commodo porttitor neque. Etiam felis nulla, imperdiet sit amet efficitur sed, sodales eu nulla. Ut ornare nunc sapien, vel bibendum risus congue in. Nam vitae auctor lorem. Sed id mauris sodales sem porttitor blandit eget id lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur at lectus laoreet, varius ex iaculis, volutpat mi. Nam a erat eget diam imperdiet sagittis vel sed nunc. Fusce mauris neque, auctor vel porttitor id, aliquam et purus. Phasellus facilisis a mauris vehicula convallis. Mauris consequat quis ipsum pharetra viverra. Vivamus ex quam, bibendum id enim at, egestas semper orci. Fusce a congue turpis.</p>
+
+			<p>Donec at vulputate nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras at mattis est. Vestibulum dapibus mauris nec velit luctus interdum a et felis. Fusce facilisis lorem vel sem porttitor laoreet. Praesent volutpat commodo orci iaculis varius. Aliquam sit amet scelerisque nunc, eget fringilla lectus. Fusce eget venenatis velit. Donec id purus id velit tempor ultricies. Donec ornare facilisis arcu, mollis vulputate mi tempus id. Nullam orci ligula, consequat et urna in, fermentum ultrices nisl. Integer volutpat nunc eget pretium sollicitudin. In semper erat eget pretium tincidunt.</p>
+
+			<p>Nam vitae sollicitudin sapien. Maecenas quis magna sodales arcu varius congue ut vel nisl. Ut vitae erat vitae urna mattis consectetur id id mauris. Suspendisse pulvinar tempor pretium. Integer quis convallis nunc. Praesent eu sodales dolor. Nullam venenatis turpis ac nibh consequat, a viverra libero aliquet. Mauris at varius odio. Nam fermentum mollis lectus. In commodo iaculis ultricies. In hendrerit, nulla sed efficitur eleifend, justo dolor placerat justo, nec faucibus nisl tortor vel ex. Proin posuere volutpat arcu, ut iaculis nisi finibus a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas scelerisque accumsan lobortis. Suspendisse volutpat leo vel commodo dapibus.</p>
+
+			<p>Phasellus dolor ante, fringilla non sapien non, auctor mollis libero. Vivamus nec libero vitae tortor ullamcorper interdum in et tellus. Phasellus vel cursus purus. Cras sit amet porta diam. In posuere sem ipsum, vitae maximus nunc accumsan eget. Ut sollicitudin lorem ac sapien faucibus convallis. Fusce ac bibendum felis. Proin eget sodales orci.</p>
+
+			<p>Vivamus iaculis diam rhoncus ex semper dictum. In hac habitasse platea dictumst. Quisque a nibh sed nibh auctor rutrum. Praesent quis arcu id nisl dapibus maximus vitae eget arcu. Maecenas in euismod metus. Maecenas tempor convallis sollicitudin. Suspendisse massa quam, convallis eu sem et, sagittis vulputate diam. Integer in hendrerit nulla. 
+		</div>
+	</section>
+	<footer></footer>
+</body>
+</html>
